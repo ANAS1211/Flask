@@ -1,0 +1,20 @@
+En premier lieu, on retrouve l'URI (Universal Resource Identifier). Il s'agit de l'adresse à laquelle doit être effectuée la requête. Elle est généralement constituée du protocole utilisé, d'un nom de domaine ainsi que d'un point de terminaison (endpoint).
+
+Par exemple, l'URI suivante http://example.org/resource peut se lire comme suit:
+
+http:// est le protocole utilisé
+example.org est le nom de domaine du serveur, c'est-à-dire une simplification de l'adresse IP du serveur.
+/resource est le point de terminaison que l'on souhaite solliciter
+
+Le code d'état permet de comprendre facilement si la requête a réussi. Par convention, les codes d'erreur doivent correspondrent aux états suivants:
+
+100: Information
+200: Signifie que la requête a conclu / Succès
+300: Redirection
+40X: Signifie une erreur côté client / Erreur client
+50X: signifie une erreur côté serveur / Erreur serveur
+
+GET pour récupérer des informations
+POST pour ajouter des nouvelles données au serveur
+PUT pour modifier des données déjà présentes sur le serveur
+DELETE pour supprimer des donnée
